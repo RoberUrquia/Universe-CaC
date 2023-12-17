@@ -1,0 +1,25 @@
+{% extends "core/base.html" %}
+{% block title %} Contact | Univerze {% endblock %}
+{% block content %}
+<section class="center-content">
+        <h2>We'd Love to Hear from You!</h2>
+        
+        <p>If you have questions, comments, or want to share your own experiences related to planets and astrology, feel free to get in touch with us.</p>
+        
+        <div class="form-container">
+            <form id="contact-form" action="https://formspree.io/androidblock@proton.me" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+                <div id="form-status">Thanks for Contacting Us!</div>
+            </form>
+        </div>
+    </section>
+{% endblock %}

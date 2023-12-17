@@ -1,0 +1,15 @@
+{% extends "core/base.html" %}
+{% block title %} Today | Univerze {% endblock %}
+{% load static %}
+{% block content %}
+<article class="planet-article">
+    <div class="container">
+        <h3 id="titulo" class="pt-5 text-center"></h3>
+        <p id="fecha" class="text-center"></p>
+        <p id="descripcion"  class="lead pt-5 "></p>
+        <div id="c_multimedia"  class="embed-responsive embed-responsive-21by9 text-center">
+        </div>
+      </div>
+      <script src="{% static 'core/js/api.js' %}"></script>
+    </article>
+{% endblock %}
